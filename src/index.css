@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@theme {
+  --font-sans: "Open Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-royal-blue: #2563EB; /* Adjust as needed */
+  --color-deep-blue: #1E40AF;
+  --color-gold-start: #FACC15;
+  --color-gold-mid: #EAB308;
+  --color-gold-end: #CA8A04;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #FFFFFF;
+  color: #1e293b; /* Slate 800 for text */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* Custom Utilities */
+.text-gradient-gold {
+  background: linear-gradient(to right, #FACC15, #CA8A04);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient-gold {
+  background: linear-gradient(135deg, #FACC15 0%, #EAB308 50%, #CA8A04 100%);
+}
+
+.bg-gradient-soft-blue {
+  background: linear-gradient(135deg, #FFFFFF 0%, #EFF6FF 50%, #DBEAFE 100%);
+}
